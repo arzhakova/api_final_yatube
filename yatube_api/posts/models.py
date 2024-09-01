@@ -29,7 +29,7 @@ class Post(models.Model):
     )
 
     class Meta:
-        ordering = ('author','-pub_date')
+        ordering = ('author', '-pub_date')
 
     def __str__(self):
         return f'{self.text[:STR_LIMIT]}'
